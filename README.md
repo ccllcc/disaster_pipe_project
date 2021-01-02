@@ -38,7 +38,7 @@ The project consists 3 main parts:
 
 # Executing Program
 1. Clone this project to your local
-> Git clone https://github.com/ccllcc.disaster_pipe_project/
+> Git clone https://github.com/ccllcc/disaster_pipe_project
 2. Run the ETL pipeline
 > Please delete the `DisasterResponse.db` first as you are going to generate a new one during the ETL process. <br>
 At the project root folder run: <br>
