@@ -26,8 +26,7 @@ The project consists 3 main parts:
 
 
 `models` folder contains the following:
-- `train_classifier.py` run this file to execute the ML pipeline process, generating a ML model and generating model in `classifier.pkl`
-- `classifier.pkl` stores the ML model when running `train_classifier.py`
+- `train_classifier.py` run this file to execute the ML pipeline process, generating a ML model and generating model
 - `evaluate_model.jpg` is a snapshot of the model evaluation when running the `train_classifier.py`
 
 `app` folder contains the following:
@@ -36,3 +35,18 @@ The project consists 3 main parts:
   - `master.html` the index page of the web app
   - `go.html` handles the classification task to be displayed on the app
 - `Viz1&2` `Viz3` `Viz4` four visualizations embedded in the web app.
+
+### Executing Program
+1. Clone this project to your local
+> Git clone https://github.com/ccllcc.disaster_pipe_project
+2. Run the ETL pipeline
+> Please delete the `DisasterResponse.db` first as you are going to generate a new one during the ETL process. <br>
+At the project root folder run: <br>
+`python data/process_data.py data/disasters_messages.csv data/disasters_categories.csv data/DisasterResponse.db` 
+3. Run the ML pipeline
+> At the project root folder run: <br>
+`python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+4. Run the app
+> At the project root folder run: <br>
+`python run.py` <br>
+Open the browser, in the address bar, go to `localhost:3001` the web should display the visualization
