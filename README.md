@@ -36,9 +36,9 @@ The project consists 3 main parts:
   - `go.html` handles the classification task to be displayed on the app
 - `Viz1&2` `Viz3` `Viz4` four visualizations embedded in the web app.
 
-### Executing Program
+# Executing Program
 1. Clone this project to your local
-> Git clone https://github.com/ccllcc.disaster_pipe_project
+> Git clone https://github.com/ccllcc.disaster_pipe_project/
 2. Run the ETL pipeline
 > Please delete the `DisasterResponse.db` first as you are going to generate a new one during the ETL process. <br>
 At the project root folder run: <br>
@@ -49,4 +49,12 @@ At the project root folder run: <br>
 4. Run the app
 > At the project root folder run: <br>
 `python run.py` <br>
-Open the browser, in the address bar, go to `localhost:3001` the web should display the visualization
+Open the browser, in the address bar, go to `localhost:3001` the web should display the visualization.
+
+# Notes
+### Running ML pipeline time
+It took me more than 30 mins when training and fine-tuning the models using GridSearchCV with 6 combinations of parameters on my local machine based on RandomForestClassifier. It was more than 2 hours with K Nearest Neighbour classifier. 
+
+### Acknowledgement
+[Udacity](https://www.udacity.com/) for building up such an comprehensive learning project, covering ETL, ML, text processing, web deployment.<br>
+[Figure Eight](https://appen.com/) for providing the original data.
