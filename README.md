@@ -48,7 +48,7 @@ At the project root folder run: <br>
 `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 4. Run the app
 > At the project root folder run: <br>
-`python run.py` <br>
+`python app/run.py` <br>
 Open the browser, in the address bar, go to `localhost:3001` the web should display the visualization.
 
 # Notes
