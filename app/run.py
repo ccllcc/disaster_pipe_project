@@ -155,7 +155,7 @@ def go():
 
     # This will render the go.html Please see that file. 
     return render_template(
-        'go_dev.html',
+        'go.html',
         query=query,
         classification_result=classification_results
     )
