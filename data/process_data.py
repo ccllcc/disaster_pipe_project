@@ -40,7 +40,7 @@ def save_data(df, database_filename):
     from sqlalchemy import create_engine
     # database_filename = 'sqlite:///DisasterDatabase.db'
     engine = create_engine('sqlite:///'+ database_filename)
-    df.to_sql('NewTable', engine, index=False)  
+    df.to_sql('NewTable', engine, index=False, if_exists='replace')  
 
 
 def main():
