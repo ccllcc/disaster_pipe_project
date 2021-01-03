@@ -26,7 +26,7 @@ def clean_data(df):
 
     for column in categories:
     # set each value to be the last character of the splited string
-        categories[column] = categories[column].str.split(pat='-',expand=True)[1].astype('float')
+        categories[column] = categories[column].str.split(pat='-',expand=True)[1].astype('int')
 
     df = df.drop(['categories'],axis=1)
     df = pd.merge(df, categories, left_index=True, right_index=True)
