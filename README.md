@@ -34,7 +34,8 @@ The project consists 3 main parts:
 - `templates` folder contains two html files
   - `master.html` the index page of the web app
   - `go.html` handles the classification task to be displayed on the app
-- `Viz1&2` `Viz3` `Viz4` four visualizations embedded in the web app.
+- `Viz1&2.jpg` `Viz3.jpg` `Viz4.jpg` four visualizations embedded in the web app.
+- `Message_classification.jpg` a snapshot of the input text message and classification.
 
 # Executing Program
 1. Clone this project to your local
