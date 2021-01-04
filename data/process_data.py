@@ -30,7 +30,7 @@ def clean_data(df):
 
     df = df.drop(['categories'],axis=1)
     df = pd.merge(df, categories, left_index=True, right_index=True)
-    df = df[df.related != 2]
+    df = df[df['related'] != 2]
 
     return df
 
